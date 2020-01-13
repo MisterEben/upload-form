@@ -1,0 +1,66 @@
+body {
+    background-image: url("img/bgE.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.219)!important;
+    color: #fff!important;
+}
+
+#uploadSection {
+    width: 40%;
+    text-align: center;
+    margin: 15px auto;
+}
+
+
+#fileForm #fileInput{
+    display: none;
+}
+#fileForm #fileLabel{
+    display: block;
+    padding: 50px;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.footer {
+    border-top: 1px solid #e7e7e7;
+    background-color:transparent;
+    line-height: 15px;
+}
+
+@media (max-width: 415px){
+ 
+    
+    #uploadSection {
+    width: 70%;
+    text-align: center;
+    margin: 15px auto;
+    }
+
+    #fileForm #fileLabel{
+        background-color:rgba(0, 0, 0, 0.219)!important;;
+        display: block;
+        padding: 35px;
+        cursor: pointer;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    #fileForm #fileLabel .dragLabel{
+        display: none;
+    }
+    .footer {
+        border-top: 1px solid #e7e7e7;
+        background-color:transparent;
+        line-height: 7px;
+    }
+        
+}

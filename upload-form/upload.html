@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tunex || Upload</title>
+    <!--icon -->
+    <link rel="icon" href="img/upload.png" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="upload.css">    
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section class="pb-5 mb-5">
+        <nav class="navbar navbar-expand-sm navbar-dark  py-1" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#">Tunex</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--End of Navigation-->
+
+    <!--Upload Section-->
+    <section id="uploadSection" >
+
+        <div class="row">
+        
+            <div class="col-12 mx-auto">
+                <form id="fileForm" action="" method="POST" class="mb-4">
+                    <div id="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+                        <input type="file" name="files[]" id="fileInput">
+        
+                    <label for="fileInput" id="fileLabel">
+                        <i class="fa fa-download fa-5x"></i><br><br>
+                        Choose File<span class="dragLabel"> Or Drag It Here</span>
+                    </label>
+                    </div>
+                         
+                    
+                    <div class="custom-file my-2">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label text-left" for="validatedCustomFile">Choose Audio...</label>
+                    </div>
+        
+                    <div class="form-group my-3">
+                        <input type="text" class="form-control form-control-sm" name="" id="" aria-describedby="helpId"
+                            placeholder="song title">
+                    </div>
+                    <button class="btn btn-light my-2" type="submit">Upload</button>
+                </form>
+        
+            </div>
+        </div>
+
+        
+    </section  >
+    <!--End of Upload Section-->
+
+    <footer class="footer mt-5">
+        <div class="container-fluid">
+            <p class="copyright text-center py-1">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> <a href="">Tunex</a>
+            </p>
+        </div>
+    </footer>
+
+    
+    <script src="upload.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
