@@ -5,10 +5,11 @@ body {
     background-repeat: no-repeat;
 }
 
-#mainNav {
-    background-color: rgba(0, 0, 0, 0.219)!important;
-    color: #fff!important;
-}
+.navbar{
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12);
+  }
+  
 
 #uploadSection {
     width: 40%;
@@ -61,6 +62,7 @@ body {
         border-top: 1px solid #e7e7e7;
         background-color:transparent;
         line-height: 7px;
+        
     }
         
 }
